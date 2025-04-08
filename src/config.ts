@@ -57,7 +57,7 @@ export const profileConfig: ProfileConfig = {
   links: [
     {
       name: 'Music',
-      icon: 'cib:apple-music',       // Visit https://icones.js.org/ for icon codes
+      icon: 'fa6-brands:spotify',       // Visit https://icones.js.org/ for icon codes
                                         // You will need to install the corresponding icon set if it's not already included
                                         // `pnpm add @iconify-json/<icon-set-name>`
       url: 'https://music.163.com/',
