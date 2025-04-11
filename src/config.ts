@@ -16,11 +16,11 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: true,
-    src: 'assets/images/back.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'assets/images/back.jpeg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
-      text: '',              // Credit text to be displayed
+      text: 'META',              // Credit text to be displayed
       url: ''                // (Optional) URL link to the original artwork or artist's page
     }
   },
@@ -51,7 +51,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/pic.jpeg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'MetaIllusion',
   bio: '万物皆有灵，只是我太空虚',
   links: [
