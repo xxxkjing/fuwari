@@ -1,5 +1,5 @@
 ---
-title: 你好，世界
+title: 关于博客
 published: 2025-04-09
 tags: [Life, Notice, Greeting]
 category: Notice
