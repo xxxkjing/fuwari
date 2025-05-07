@@ -1,27 +1,54 @@
 media:
-  input: src/assets/media
-  output: /media
+  input: public
+  output: /
 content:
-  - name: posts
-    label: Posts
+  - name: editor
+    label: 文章
     type: collection
-    path: 'src/content/posts'
+    path: src/content/posts
     view:
-      fields: [ title, published, date ]
+      fields: [ title, date, draft ]
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
+      - { name: title, label: 标题, type: string, required: true }
+      - { name: draft, label: 草稿, type: boolean, default: true }
+      - { name: slug, label: 固定链接, type: string, required: true }
       - name: date
-        label: Date
+        label: 日期
         type: date
-      - name: title
-        label: Title
+        options:
+          format: yyyy-MM-dd'T'HH:mm:ss
+          time: true
+      - name: categories
+        label: 分类
+        type: select
+        list: true
+        options:
+          values:
+            - 生活
+            - 瞬间
+            - 法律
+            - 技术
+            - 社会
+      - name: tags
+        label: 标签
         type: string
-      - name: body
-        label: Body
-        type: rich-text
+        list:
+          min: 1
+          max: 6
+      - name: imageupload
+        label: 上传照片区域
+        type: object
+        list: true
+        fields:
+          - name: addimage
+            label: 添加照片
+            type: image
+            options:
+              input: public
+              output: /
+              categories: [image]
+      - { name: image, label: 特色图片地址, type: string, required: true }
+      - { name: body, label: 正文, type: rich-text }
   - name: site
     label: Site settings
     path: src/_data/site.json
