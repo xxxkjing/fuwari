@@ -3,7 +3,7 @@ media:
   output: /
 content:
   - name: editor
-    label: 文章
+    label: Posts
     type: collection
     path: src/content/posts
     view:
@@ -19,53 +19,27 @@ content:
           format: yyyy-MM-dd'T'HH:mm:ss
           time: true
       - name: categories
-        label: 分类
-        type: select
-        list: true
-        options:
-          values:
-            - 生活
-            - 瞬间
-            - 法律
-            - 技术
-            - 社会
+        label: Categories
+        type: string
+        list:
+          min: 1
+          max: 6
       - name: tags
-        label: 标签
+        label: Tags
         type: string
         list:
           min: 1
           max: 6
       - name: imageupload
-        label: 上传照片区域
+        label: Upload Images
         type: object
         list: true
         fields:
           - name: addimage
-            label: 添加照片
+            label: Add Images
             type: image
             options:
               input: public
               output: /
               categories: [image]
-      - { name: image, label: 特色图片地址, type: string, required: true }
       - { name: body, label: 正文, type: rich-text }
-  - name: site
-    label: Site settings
-    path: src/_data/site.json
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
-      - name: description
-        label: Website description
-        type: string
-        description: Will be provused for any page with no description.
-      - name: url
-        label: Website URL
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: cover
-        label: Preview image
-        type: image
-        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
