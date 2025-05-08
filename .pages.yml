@@ -35,7 +35,7 @@ content:
             label: Add Images
             type: image
             options:
-              input: public
-              output: /
+              input: public/Assets
+              output: /Assets/
               categories: [image]
       - { name: body, label: Text, type: rich-text }
