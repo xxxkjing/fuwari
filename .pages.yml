@@ -9,15 +9,14 @@ content:
     view:
       fields: [ title, date, draft ]
     fields:
-      - { name: title, label: 标题, type: string, required: true }
-      - { name: draft, label: 草稿, type: boolean, default: true }
-      - { name: slug, label: 固定链接, type: string, required: true }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: draft, label: Draft, type: boolean, default: true }
       - name: published
-        label: 日期
+        label: Date
         type: date
         options:
-          format: yyyy-MM-dd
-          time: true
+          format: yyyy-MM-dd 
+        required: true
       - name: category
         label: Category
         type: string
@@ -39,4 +38,4 @@ content:
               input: public
               output: /
               categories: [image]
-      - { name: body, label: 正文, type: rich-text }
+      - { name: body, label: Text, type: rich-text }
