@@ -1,6 +1,6 @@
 ---
 title: 在Manjaro上游玩杀戮尖塔时的错误
-draft: true
+draft: false
 published: 2025-04-27
 category: Linux
 tags:
