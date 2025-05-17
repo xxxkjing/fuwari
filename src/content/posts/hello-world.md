@@ -21,4 +21,4 @@ tags:
 - `c14e2-87f27`
 - `54931-62348`
 
-()[https://2faotp.cn/]
+[]('https://2faotp.cn/')
