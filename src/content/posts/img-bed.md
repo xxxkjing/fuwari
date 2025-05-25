@@ -1,8 +1,8 @@
 ---
-title: 【Web】图床搭建全解
+title: 图床搭建指南
 draft: false
 published: 2025-03-05
-category: Web
+category: 网络
 tags:
   - 博客
   - 图片
