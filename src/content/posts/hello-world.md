@@ -2,7 +2,7 @@
 title: 关于博客
 draft: false
 published: 2025-04-09
-category: Notice
+category: 通知
 tags:
   - 博客
   - 通知
