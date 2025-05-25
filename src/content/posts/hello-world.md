@@ -4,9 +4,9 @@ draft: false
 published: 2025-04-09
 category: Notice
 tags:
-  - Life
-  - Notice
-  - Greeting
+  - 博客
+  - 通知
+  - 生活
 ---
 # 你好，世界！
 
