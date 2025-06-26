@@ -26,13 +26,13 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
 
 # 查询
 
-上网查询，翻阅到Github Issue\[^1\]才知道缺少要安装的xrendr模块
+上网查询，翻阅到Github Issue \[^1\]才知道缺少要安装的xrendr模块
 
-\[^1\] [Slay The Spire missing /usr/bin/xrandr after Steam Runtime update, fails to start #702](https://github.com/ValveSoftware/steam-runtime/issues/702)
+\[^1\]: [Slay The Spire missing /usr/bin/xrandr after Steam Runtime update, fails to start #702](https://github.com/ValveSoftware/steam-runtime/issues/702)
 
-在ArchLinux仓库\[^2\]中搜索到软件名为\`xorg-xrendr\`
+在ArchLinux仓库 \[^2\]中搜索到软件名为\`xorg-xrendr\`
 
-\[^2\][Arch Linux - xorg-xrandr 1.5.3-1](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/)
+\[^2\]: [Arch Linux - xorg-xrandr 1.5.3-1](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/)
 
 # 解决
 
