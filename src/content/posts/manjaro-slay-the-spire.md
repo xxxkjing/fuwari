@@ -26,13 +26,9 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
 
 # 查询
 
-上网查询，翻阅到Github Issue \[^1\]才知道缺少要安装的xrendr模块
+上网查询，翻阅到 [Github Issue](https://github.com/ValveSoftware/steam-runtime/issues/702) 才知道缺少要安装的xrendr模块
 
-\[^1\]: [Slay The Spire missing /usr/bin/xrandr after Steam Runtime update, fails to start #702](https://github.com/ValveSoftware/steam-runtime/issues/702)
-
-在ArchLinux仓库 \[^2\]中搜索到软件名为\`xorg-xrendr\`
-
-\[^2\]: [Arch Linux - xorg-xrandr 1.5.3-1](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/)
+在 [ArchLinux仓库](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/) 中搜索到软件名为\`xorg-xrendr\`
 
 # 解决
 
@@ -44,14 +40,12 @@ sudo pacman -S xorg-xrendr
 
 然后就能顺利打开了
 
-Here's a link to \[a website\]([http://foo.bar](http://foo.bar)), to a \[local
-
-doc\](local-doc.html), and to a \[section heading in the current
-
-doc\](#an-h2-header). Here's a footnote \[^1\].
-
-\[^1\]: Footnote text goes here.
-
 # 后记
 
 > ‌**Xrandr**‌ 是 X Window 系统中的官方显示配置工具，用于调整屏幕分辨率、刷新率、旋转方向及多显示器布局等参数。
+
+# 参考
+
+1.  [Slay The Spire missing /usr/bin/xrandr after Steam Runtime update, fails to start #702](https://github.com/ValveSoftware/steam-runtime/issues/702)
+    
+2.  [Arch Linux - xorg-xrandr 1.5.3-1](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/)
