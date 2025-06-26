@@ -20,18 +20,17 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
         at org.lwjgl.opengl.LinuxDisplay.getAvailableDisplayModes(LinuxDisplay.java:954)
         at org.lwjgl.opengl.LinuxDisplay.init(LinuxDisplay.java:738)
         at org.lwjgl.opengl.Display.<clinit>(Display.java:138)
-        ... 2 more
 ```
 
-后来翻阅Github才知道要安装xrendr模块
+后来翻阅Github Issue\[^1\]才知道缺少要安装的xrendr模块
 
-> 参考 [Github Issue](https://github.com/ValveSoftware/steam-runtime/issues/702)
+\[^1\] [Slay The Spire missing /usr/bin/xrandr after Steam Runtime update, fails to start #702](https://github.com/ValveSoftware/steam-runtime/issues/702)
 
-在ArchLinux搜索到软件名为\`xorg-xrendr\`
+在ArchLinux仓库\[^2\]中搜索到软件名为\`xorg-xrendr\`
 
-> 仓库链接 [xorg-xrendr](https://archlinux.org/packages/?name=xorg-xrandr)
+\[^2\][Arch Linux - xorg-xrandr 1.5.3-1](https://archlinux.org/packages/extra/x86_64/xorg-xrandr/)
 
-所以Manjaro linux下安装命令为：
+在Manjaro linux下安装命令为：
 
 ```bash
 sudo pacman -S xorg-xrendr
