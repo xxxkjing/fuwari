@@ -4,8 +4,8 @@ draft: false
 published: 2025-04-27
 category: Linux
 tags:
-  - Game
-  - Slay The Spire
+  - 游戏
+  - 杀戮尖塔
   - Java
 ---
 安装时是一直没有问题的
