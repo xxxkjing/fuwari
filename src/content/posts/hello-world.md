@@ -1,5 +1,5 @@
 ---
-title: 关于博客
+title: 【博客】关于这个博客
 draft: false
 published: 2025-04-09
 category: 通知
