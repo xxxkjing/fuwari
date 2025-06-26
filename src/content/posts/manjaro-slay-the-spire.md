@@ -44,6 +44,14 @@ sudo pacman -S xorg-xrendr
 
 然后就能顺利打开了
 
+Here's a link to \[a website\]([http://foo.bar](http://foo.bar)), to a \[local
+
+doc\](local-doc.html), and to a \[section heading in the current
+
+doc\](#an-h2-header). Here's a footnote \[^1\].
+
+\[^1\]: Footnote text goes here.
+
 # 后记
 
 > ‌**Xrandr**‌ 是 X Window 系统中的官方显示配置工具，用于调整屏幕分辨率、刷新率、旋转方向及多显示器布局等参数。
