@@ -1,12 +1,12 @@
 ---
-title: 图床搭建指南
+title: 【存储】图床搭建指南
 draft: false
 published: 2025-03-05
-category: 网络
+category: 存储
 tags:
   - 博客
   - 图片
-  - 存储
+  - 网络
 ---
 > 长时间的寻找后也找到一些方案，根据具体可执行性对其进行评论
 
