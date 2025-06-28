@@ -19,7 +19,7 @@ tags:
 
 参考配置文件：
 
-```toml
+```yaml
 media:
   input: public
   output: /
@@ -60,7 +60,7 @@ content:
               input: public/Assets
               output: /Assets/
               categories: [image]
-      - { name: body, label: Text, type: rich-text }
+      - { name: body, label: Text, type: rich-text } 
 ```
 
 # 个人备注：
