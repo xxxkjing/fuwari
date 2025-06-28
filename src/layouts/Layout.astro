@@ -144,6 +144,10 @@ const bannerOffset =
 
 
 		<slot name="head"></slot>
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 <script type="text/javascript">
@@ -158,6 +162,7 @@ const bannerOffset =
 		  data-overlayscrollbars-initialize
 	>
 		<ConfigCarrier></ConfigCarrier>
+
 		<slot />
 
 		<!-- increase the page height during page transition to prevent the scrolling animation from jumping -->
