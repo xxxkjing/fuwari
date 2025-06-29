@@ -1,6 +1,11 @@
 ---
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink, faShare } from '@fortawesome/free-solid-svg-icons';
+import { Icon, type IconifyIcon } from '@iconify/svelte';
+
+// 导入需要的图标
+import linkSolid from '@iconify-json/fa6-solid/icons/link.json';
+import shareSolid from '@iconify-json/fa6-solid/icons/share.json';
+import playSolid from '@iconify-json/fa6-solid/icons/play.json';
+import pauseSolid from '@iconify-json/fa6-solid/icons/pause.json';
 
 interface Props {
   cover?: string;
@@ -51,11 +56,11 @@ function togglePlay(audio: HTMLAudioElement) {
 
   <div class="player">
     <div class="vinyl">
-      <FontAwesomeIcon 
-        icon={isPlaying ? faPause : faPlay} 
-        size="sm" 
-        color="#d9b382" 
+      <!-- 使用 Iconify 图标 -->
+      <Icon 
+        icon={isPlaying ? pauseSolid : playSolid} 
         class="play-icon" 
+        style="color: #d9b382; font-size: 14px;" 
       />
     </div>
     
@@ -73,8 +78,9 @@ function togglePlay(audio: HTMLAudioElement) {
   </div>
 
   <div class="actions">
-    <FontAwesomeIcon icon={faLink} size="lg" color="#bfa287" />
-    <FontAwesomeIcon icon={faShare} size="lg" color="#bfa287" />
+    <!-- 使用 Iconify 图标 -->
+    <Icon icon={linkSolid} class="action-icon" style="color: #bfa287; font-size: 20px;" />
+    <Icon icon={shareSolid} class="action-icon" style="color: #bfa287; font-size: 20px;" />
   </div>
 
   {audioSrc && (
@@ -101,7 +107,6 @@ function togglePlay(audio: HTMLAudioElement) {
 .desc { /* ... */ }
 .player { /* ... */ }
 .vinyl {
-  /* 新增：为播放图标定位 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,6 +115,16 @@ function togglePlay(audio: HTMLAudioElement) {
 .time { /* ... */ }
 .progress-bar { /* ... */ }
 .progress { /* ... */ }
-.actions { /* ... */ }
-.actions svg { /* ... */ }
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.action-icon {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.action-icon:hover {
+  color: #d9b382;
+}
 </style>
