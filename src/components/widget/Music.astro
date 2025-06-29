@@ -13,35 +13,29 @@ const musicConfig = {
   ]
 }
 ---
-<div class="card-base p-3">
-    <div aria-label="Music Card" class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
-       max-w-[12rem] lg:max-w-none overflow-hidden rounded-xl active:scale-95 bg-gray-800">
-        <!-- 音乐封面 -->
-        <div class="relative w-full h-[10rem] overflow-hidden rounded-t-xl">
-            <img 
-                src={musicConfig.coverImage} 
-                alt="Music Cover Image" 
-                class="mx-auto w-full h-full object-cover">
-        </div>
+<div class="max-w-sm mx-auto bg-gray-800 border border-gray-700 rounded-xl shadow-md">
+  <!-- 音乐封面 -->
+  <div class="w-full h-48 overflow-hidden rounded-t-xl">
+    <img src="/music/cover.jpg" alt="音乐封面" class="w-full h-full object-cover">
+  </div>
 
-        <!-- 音乐标题和描述 -->
-        <div class="px-2 py-4 text-center">
-            <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50">{musicConfig.title}</div>
-            <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2 transition"></div>
-            <div class="text-center text-neutral-400 mb-2.5">{musicConfig.description}</div>
-        </div>
-        <audio controls class="w-full rounded-lg bg-gray-700 text-gray-300 px-3 py-2 shadow-inner">
-            <source src={musicConfig.audioSource} type="audio/mpeg">
-            您的浏览器不支持音频播放功能。
-        </audio>
+  <!-- 音乐信息 -->
+  <div class="p-4 text-center">
+    <h3 class="text-lg font-bold text-gray-100">音乐时光</h3>
+    <p class="text-sm text-gray-400 mb-4">分享近期喜爱的音乐 🎵</p>
+    <audio controls class="w-full rounded bg-gray-900 text-gray-300">
+      <source src="/music/current-song.mp3" type="audio/mpeg">
+      您的浏览器不支持音频播放功能。
+    </audio>
+  </div>
 
-        <!-- 外部链接图标 -->
-        <div class="flex gap-2 justify-center mt-3 mb-1">
-            {musicConfig.links.map(link =>
-                <a rel="noopener" aria-label={link.name} href={link.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
-                    <Icon name={link.icon} class="text-[1.5rem] text-gray-300"></Icon>
-                </a>
-            )}
-        </div>
-    </div>
+  <!-- 链接区域 -->
+  <div class="flex justify-center gap-4 p-4">
+    <a href="https://spotify.com" target="_blank" class="text-gray-300 hover:text-gray-100">
+      <Icon name="fa6-brands:spotify" class="text-2xl"></Icon>
+    </a>
+    <a href="https://music.163.com" target="_blank" class="text-gray-300 hover:text-gray-100">
+      <Icon name="fa6-brands:music-note" class="text-2xl"></Icon>
+    </a>
+  </div>
 </div>
