@@ -106,11 +106,11 @@ const jsonLd = {
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
 <div id="waline"></div>
   <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    import { init } from '/waline.js';
 
     init({
       el: '#waline',
-      serverURL: 'https://cms.shfu.cn',
+      serverURL: 'https://cms.shfu.cn'
     });
   </script>
         </div>

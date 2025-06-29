@@ -13,7 +13,6 @@ export const siteConfig: SiteConfig = {
   themeColor: {
     hue: 50,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
     fixed: true,     // Hide the theme color picker for visitors
-    darkMode: 'dark'
   },
   banner: {
     enable: true,
@@ -57,16 +56,16 @@ export const profileConfig: ProfileConfig = {
   bio: '愿这份友谊长存',
   links: [
     {
+      name: 'BiliBili',
+      icon: 'simple-icons:bilibili',
+      url: 'https://space.bilibili.com/2028612666',
+    },
+    {
       name: 'Music',
-      icon: 'material-symbols:library-music-outline',       // Visit https://icones.js.org/ for icon codes
+      icon: 'simple-icons:neteasecloudmusic',       // Visit https://icones.js.org/ for icon codes
                                         // You will need to install the corresponding icon set if it's not already included
                                         // `pnpm add @iconify-json/<icon-set-name>`
       url: 'https://music.163.com/#/user/home?id=3419706766',
-    },
-    {
-      name: 'BiliBili',
-      icon: 'fa6-brands:bilibili',
-      url: 'https://space.bilibili.com/2028612666',
     },
     {
       name: 'GitHub',
