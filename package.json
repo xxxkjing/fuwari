@@ -60,6 +60,8 @@
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",
     "@biomejs/biome": "1.9.4",
+    "@iconify-json/ri": "^1.2.5",
+    "@iconify-json/simple-icons": "^1.2.40",
     "@rollup/plugin-yaml": "^4.1.2",
     "@types/markdown-it": "^14.1.2",
     "@types/mdast": "^4.0.4",
