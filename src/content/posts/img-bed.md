@@ -15,3 +15,13 @@ tags:
 可以参考我的[图床](https://img.shfu.cn)
 
 使(bai)用(piao)vercel blob storage
+
+* * *
+
+# 重大突破
+
+> 更新于2025年7月5日
+
+用Grok重新搞了一下，翻新完毕
+
+::github{repo="xxxkjing/blob-imgbed"}
