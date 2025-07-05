@@ -1,0 +1,34 @@
+---
+import WidgetLayout from './WidgetLayout.astro';
+import MusicSquare from './MusicPlayer.svelte';
+
+interface Props {
+  class?: string;
+  style?: string;
+}
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+---
+  <div class="mt-2">
+    <MusicSquare
+      cover="/Assets/cover.jpg"
+      src="/Assets/song.mp3"
+      title="Saturday"
+      artist="Twenty One Pilots"
+    />
+  </div>
+</WidgetLayout>
+
+<script>
+const audio = document.getElementById('myAudio');
+const btn = document.getElementById('playPauseBtn');
+
+btn.addEventListener('click', () => {
+    if(audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+});
+</script>
