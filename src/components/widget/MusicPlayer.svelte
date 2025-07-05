@@ -25,7 +25,7 @@
   on:click={togglePlay}
   style="background: url({cover}) center/cover no-repeat;"
 >
-  <audio bind:this={audioEl} src={src} preload="auto" class="hidden" />
+  <audio bind:this={audioEl} src={src} preload="auto" class="hidden" id="myAudio" />
 
   <!-- 毛玻璃遮罩 -->
   <div
@@ -37,18 +37,15 @@
       <div
         class="w-16 h-16 bg-white/70 rounded-full shadow-[0_4px_14px_rgba(0,0,0,0.3)]
                flex items-center justify-center transform transition-all duration-200
-               group-hover:scale-110"
+               group-hover:scale-110" id="playPauseBtn"
       >
-        {#if playing}
-          <svg viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-gray-900">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-gray-900" id="play-btn" hidden>
             <rect x="6" y="5" width="4" height="14" rx="1" />
             <rect x="14" y="5" width="4" height="14" rx="1" />
           </svg>
-        {:else}
-          <svg viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-gray-900">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-gray-900" id="pause-btn" display="block">
             <path d="M8 5v14l11-7z" />
           </svg>
-        {/if}
       </div>
     </div>
 
@@ -59,3 +56,4 @@
     </div>
   </div>
 </div>
+
