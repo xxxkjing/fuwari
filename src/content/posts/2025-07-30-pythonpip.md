@@ -1,7 +1,7 @@
 ---
 title: 【Python】pip换源
 draft: false
-published: 2025-07-30
+published: 2025-07-29
 category: 代码
 tags:
   - 编程环境
@@ -32,10 +32,9 @@ pip config --site set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 几个常用的软件源：
 
-*   阿里云：[**https://mirrors.aliyun.com/pypi/simple/**](https://mirrors.aliyun.com/pypi/simple/)[  
-    ](https://mirrors.aliyun.com/pypi/simple/￼豆瓣：https://pypi.douban.com/simple/￼中科大：https://pypi.mirrors.ustc.edu.cn/simple/)
+*   阿里云：[**https://mirrors.aliyun.com/pypi/simple/**](https://mirrors.aliyun.com/pypi/simple/)[](https://mirrors.aliyun.com/pypi/simple/%EF%BF%BC%E8%B1%86%E7%93%A3%EF%BC%9Ahttps://pypi.douban.com/simple/%EF%BF%BC%E4%B8%AD%E7%A7%91%E5%A4%A7%EF%BC%9Ahttps://pypi.mirrors.ustc.edu.cn/simple/)
     
-*   豆瓣：[**https://pypi.douban.com/simple/**](https://pypi.douban.com/simple/)  
+*   豆瓣：[**https://pypi.douban.com/simple/**](https://pypi.douban.com/simple/)
     
 *   中科大：[**https://pypi.mirrors.ustc.edu.cn/simple/**](https://pypi.mirrors.ustc.edu.cn/simple/)
     
