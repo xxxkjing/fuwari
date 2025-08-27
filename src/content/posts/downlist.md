@@ -16,43 +16,36 @@ imageupload:
 
 ## 下载链接
 
-Windows：[密码:acbk](https://xia-jing.lanzn.com/i4n7l34ni1ej)
-
-Linux&MacOS：未完待续
+- [Windows](https://xia-jing.lanzn.com/i6Dfw34o1ube)
+- [Linux & MacOS](https://xia-jing.lanzn.com/iDs9034o1mxi)
 
 ## 界面
 
 ### **Windows 10**
-
 ![](/windows.png)
 
 ### **Manjaro Linux (Gnome)**
-
 ![](/linux.png)
 
 ## 优化与更新
 
 *   无需自备`Cookie`
-    
 *   无音质、下载数量限制
-    
 *   同目录下生成`download.log`文件查看日志
-    
 *   软件包大小 68.9MB → 25.4 M, 使用`tkinter`替代`flet`
-    
 *   支持单曲专辑歌单的解析下载
-    
 *   支持多线程下载
-    
 *   支持修改内容名称，防止存在不合规字符
-    
 *   优化显示
-    
 *   优化部分格式的元数据写入
     
 
 ## 备注
-
-*   本软件为MetaIllusion开发，转载标明[出处](https://xia.shfu.cn/posts/2025-08-27-/)
-    
+*   这一版开源仓库不更新，请谅解
+*   本软件为MetaIllusion开发，转载标明[出处](https://xia.shfu.cn/posts/downlist/)
 *   预留广告位，欢迎联系
+
+### 开源仓库
+
+::github{repo="xxxkjing/downlist"}
+
