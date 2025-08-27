@@ -18,6 +18,7 @@ imageupload:
 
 - [Windows](https://xia-jing.lanzn.com/i6Dfw34o1ube)
 - [Linux & MacOS](https://xia-jing.lanzn.com/iDs9034o1mxi)
+- [Github Release](https://github.com/xxxkjing/DownList/releases/tag/2.0)
 
 ## 界面
 
