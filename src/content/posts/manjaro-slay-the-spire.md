@@ -8,10 +8,11 @@ tags:
   - 杀戮尖塔
   - Java
   - Linux
+description: 安装中一直没有报错，但是打开游戏，Java就会报错：缺少render模块
 ---
 # 报错
 
-安装中一直没有报错，但是打开游戏Java就会报错：
+安装中一直没有报错，但是打开游戏，Java就会报错：
 
 ```bash
 Exception in thread "LWJGL Application" java.lang.ExceptionInInitializerError
