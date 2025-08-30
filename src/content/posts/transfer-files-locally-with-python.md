@@ -6,6 +6,7 @@ category: 存储
 tags:
   - 网络
   - Python
+description: 用Python的http.server模块将本机作为服务器，从而实现快速局域网传输
 ---
 # 需求
 
