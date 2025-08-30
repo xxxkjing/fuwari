@@ -1,14 +1,12 @@
 ---
-title: 一个可以免费下载网易云音乐的软件
+title: 【音乐】一个可以免费下载网易云音乐的软件
 draft: false
 published: 2025-08-27
 category: 音乐
 tags:
   - 下载
   - 媒体
-imageupload:
-  - addimage: /windows.png
-  - addimage: /linux.png
+description: 一个可以免费下载网易云音乐歌曲的应用，突破下载数量、音质限制
 ---
 # DownList
 
@@ -16,16 +14,18 @@ imageupload:
 
 ## 下载链接
 
-- [Windows](https://xia-jing.lanzn.com/i6Dfw34o1ube)
-- [Linux & MacOS](https://xia-jing.lanzn.com/iDs9034o1mxi)
-- [Github Release](https://github.com/xxxkjing/DownList/releases/tag/2.0)
+*   [Windows](https://xia-jing.lanzn.com/i6Dfw34o1ube)
+*   [Linux & MacOS](https://xia-jing.lanzn.com/iDs9034o1mxi)
+*   [Github Release](https://github.com/xxxkjing/DownList/releases/tag/2.0)
 
 ## 界面
 
 ### **Windows 10**
+
 ![](/windows.png)
 
 ### **Manjaro Linux (Gnome)**
+
 ![](/linux.png)
 
 ## 优化与更新
@@ -39,9 +39,9 @@ imageupload:
 *   支持修改内容名称，防止存在不合规字符
 *   优化显示
 *   优化部分格式的元数据写入
-    
 
 ## 备注
+
 *   这一版开源仓库不更新，请谅解
 *   本软件为MetaIllusion开发，转载标明[出处](https://xia.shfu.cn/posts/downlist/)
 *   预留广告位，欢迎联系
@@ -49,4 +49,3 @@ imageupload:
 ### 开源仓库
 
 ::github{repo="xxxkjing/downlist"}
-
