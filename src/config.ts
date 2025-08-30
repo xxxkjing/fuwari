@@ -19,9 +19,9 @@ export const siteConfig: SiteConfig = {
     src: 'assets/images/back.jpeg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
-      enable: false,         // Display the credit text of the banner image
-      text: 'META',              // Credit text to be displayed
-      url: ''                // (Optional) URL link to the original artwork or artist's page
+      enable: true,         // Display the credit text of the banner image
+      text: '@Simon Zhu',              // Credit text to be displayed
+      url: 'https://unsplash.com/@smnzhu'                // (Optional) URL link to the original artwork or artist's page
     }
   },
   toc: {
@@ -72,6 +72,11 @@ export const profileConfig: ProfileConfig = {
       name: 'GitHub',
       icon: 'fa6-brands:github',
       url: 'https://github.com/xxxkjing',
+    },
+    {
+      name: 'linux.do',
+      icon: 'ic:round-forum',
+      url: 'https://linux.do/u/xkjing0924',
     },
     {
       name: 'Email',
