@@ -9,7 +9,7 @@ tags:
 ---
 ## 引言
 
-本来想要装一个\`Open Cave Adventure\`玩一玩，不知道之前怎么乱搞软件源，报了个从来没见过的错误
+本来想要装一个 \`Open Cave Adventure\` 玩一玩，不知道之前怎么乱搞软件源，报了个从来没见过的错误
 
 ## 报错
 
@@ -26,13 +26,13 @@ tags:
 
 ### 打开配置文件
 
-运行\`sudo vim /etc/pacman.conf\`
+运行 \`sudo vim /etc/pacman.conf\`
 
-按\`G\`转到最后一行
+按 \`G\` 转到最后一行
 
 ### 发现问题
 
-这里是发现发现\`sublime text\`软件数据库重复
+这里是发现发现 \`sublime text\` 软件数据库重复
 
 具体是这样的：
 
@@ -46,7 +46,7 @@ Server = https://download.sublimetext.com/arch/stable/x86_64
 
 ## 备注
 
-附上Linux通用安装\`sublime text\`方法
+附上Linux通用安装 \`sublime text\` 方法
 
 ### 先导入GPG密钥
 
@@ -76,4 +76,4 @@ sudo pacman -S sublime-text
 sudo pacman -Syu
 ```
 
-_这个是官方提供的_，但是我个人\*\*极不推荐\*\*，因为这个命令是全面升级系统，如果很久没有升级，会一下安装很多很多很多很多的软件，然后让电脑安装到爆炸（不要问我怎么知道的）
+_这个是官方提供的_，但是我个人 **极不推荐**，因为这个命令是全面升级系统，如果很久没有升级，会一下安装很多很多很多很多的软件，然后让电脑安装到爆炸~（不要问我怎么知道的）~
