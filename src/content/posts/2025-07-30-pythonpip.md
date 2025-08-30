@@ -7,6 +7,7 @@ tags:
   - 编程环境
   - Python
   - 软件源
+description: 最简单、最快捷的Python换源教程
 ---
 # 单次换源
 
