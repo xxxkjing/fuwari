@@ -22,10 +22,10 @@ const { Content } = await aboutPost.render()
     import { init } from '/waline.js';
     var theme = localStorage.theme;
     if (theme == 'dark'){
-        theme = true
+        theme = 'true';
     }
     if (theme == 'light'){
-        theme = false
+        theme = 'false';
     }
     init({
       el: '#waline',
