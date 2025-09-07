@@ -20,9 +20,16 @@ const { Content } = await aboutPost.render()
 <div id="waline"></div>
   <script type="module">
     import { init } from '/waline.js';
-
+    var theme = localStorage.theme;
+    if (theme == 'dark'){
+        theme = true
+    }
+    if (theme == 'light'){
+        theme = false
+    }
     init({
       el: '#waline',
+      dark: theme,
       serverURL: 'https://cms.shfu.cn'
     });
   </script>
